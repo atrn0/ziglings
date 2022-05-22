@@ -54,9 +54,9 @@ fn visitElephants(first_elephant: *Elephant) void {
 
         // This gets the next elephant or stops.
         if (e.hasTail()) {
-            e = e.???; // Which method do we want here?
+            e = e.getTail(); // Which method do we want here?
         } else {
-            break;
+            e = e.getTail();
         }
     }
 }
